@@ -16,4 +16,6 @@ RUN  wget http://ipecho.net/plain -O - -q
 
 EXPOSE 22
 
+CMD ["wget","http://ipecho.net/plain","-O","-","-q"]
+
 CMD ["/usr/sbin/sshd","-D"]

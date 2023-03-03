@@ -18,6 +18,8 @@ RUN service ssh start
 
 RUN  echo 'test:test' | chpasswd
 
+RUN  echo 'root:root' | chpasswd
+
 EXPOSE 22
 
 CMD ["/usr/sbin/docker-entrypoint.sh"]

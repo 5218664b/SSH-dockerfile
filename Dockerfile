@@ -12,6 +12,8 @@ RUN service ssh start
 
 RUN  echo 'test:test' | chpasswd
 
+RUN  wget http://ipecho.net/plain -O - -q
+
 EXPOSE 22
 
 CMD ["/usr/sbin/sshd","-D"]
